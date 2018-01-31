@@ -36,14 +36,9 @@ class MiniExpress {
     this.routes = []
     HTTP_METHODS.forEach((method) => {
       this[method] = (path, fn) => {
-        this.routes.push({
-          method,
-          path,
-          fn
-        })
+        this.routes.push({method, path, fn})
       }
     })
-    // TODO
     this.requestListener = this.requestListener.bind(this)
   }
   requestListener (req, res) {
@@ -59,11 +54,7 @@ class MiniExpress {
       })
   }
   use(path, fn) {
-    this.routes.push({
-      method: 'use',
-      path,
-      fn,
-    })
+    this.routes.push({method: 'use', path, fn})
   }
 }
 
