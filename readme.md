@@ -1,12 +1,11 @@
-## Mini Express
+# Mini Express
 
-### 极简的 Express 风格服务器，仅实现了路由池和中间件功能。
+#### 极简的 Express 风格服务器，仅实现了路由池和中间件功能。
 
 ```javascript
 
-// 模块导出 MiniExpress 类。
-
-// 实例化
+// 实例化导出的 MiniExpress 类
+const MiniExpress = require('./mini-express.js')
 const app = new MiniExpress()
 
 // 监听目标路由上的请求
