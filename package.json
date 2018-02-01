@@ -1,0 +1,19 @@
+{
+  "name": "mini-express",
+  "version": "1.0.0",
+  "description": "Simple express-like framework.",
+  "main": "mini-express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youknowznm/mini-express.git"
+  },
+  "author": "youknowznm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youknowznm/mini-express/issues"
+  },
+  "homepage": "https://github.com/youknowznm/mini-express#readme"
+}
