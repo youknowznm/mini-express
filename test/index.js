@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
   res.end('这是首页。')
 })
 
-// 添加一个中间件，它不允许 '/noQueryAllowed' 路由出现查询字符串
+// 添加一个中间件，它不允许 '/no-query-allowed' 路由出现查询字符串
 app.use('/no-query-allowed', (req, res, next) => {
   if (typeof url.parse(req.url).query === 'string') {
     res.writeHead(403, {'Content-Type': 'text/html;charset=utf-8'})
