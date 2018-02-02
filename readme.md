@@ -1,6 +1,11 @@
 # Mini Express
 
-#### 极简的 Express 风格服务器，仅实现了路由池和中间件功能。
+极简的 Express 风格服务器，仅实现了路由池和中间件功能。
+
+```bash
+# 测试请运行：
+$ npm run test
+```
 
 ```javascript
 
@@ -27,5 +32,4 @@ app.get('/secret', (req, res) => {
 })
 
 // 并未实现静态文件服务和 Request、Response 等对象的扩展。
-
 ```
