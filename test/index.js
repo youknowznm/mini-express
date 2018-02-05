@@ -9,9 +9,9 @@ app.get('/', (req, res) => {
   res.end('这是首页。')
 })
 
-// 添加一个中间件，它不允许 '/no-query-allowed' 路由出现查询字符串
+// 添加一个中间件，它不允许 '/no-query-allowed' 路由出现任何查询字符串
 app.use('/no-query-allowed', (req, res, next) => {
-  if (typeof url.parse(req.url).query === 'string') {
+  if (JSON.stringify(req.query) !== '{}') {
     res.writeHead(403, {'Content-Type': 'text/html;charset=utf-8'})
     res.end('这个路由不允许出现查询字符串。')
   } else {
